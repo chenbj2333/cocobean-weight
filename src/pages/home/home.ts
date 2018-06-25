@@ -13,7 +13,7 @@ export class HomePage {
     {code: '2', value: '肌肉'},
     {code: '3', value: '内脏脂肪'}
   ];
-  private selectSegment: string;
+  selectSegment: string;
   private xAxis: Array<string> = ['2018-06-24'];
   private weightY: Array<number> = [];
   private fatY: Array<number> = [];
