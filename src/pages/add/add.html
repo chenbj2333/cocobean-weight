@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      新增数据
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">时间</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" fixed>体重</ion-label>
+      <ion-input class="add-input" [(ngModel)]="weight"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" fixed>体脂</ion-label>
+      <ion-input class="add-input" [(ngModel)]="fat"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" fixed>肌肉</ion-label>
+      <ion-input class="add-input" [(ngModel)]="muscle"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" fixed>内脏脂肪</ion-label>
+      <ion-input class="add-input" [(ngModel)]="gullet"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button round block (click)="add()" style="margin-top: 50px;">添加</button>
+</ion-content>
